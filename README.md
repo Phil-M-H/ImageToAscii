@@ -1,6 +1,6 @@
 # ImageToAscii
 ## Plan
-### A web server that will authenticate users using jwt, and then accept http requests containing images, covert those images to ASCII, and then send it back as text.
+A web server that will authenticate users using jwt, and then accept http requests containing images, covert those images to ASCII, and then send it back as text.
 
 ## Current Status
 ### 1/13/2020
