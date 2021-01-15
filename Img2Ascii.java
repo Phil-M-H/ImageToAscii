@@ -13,15 +13,17 @@ public class Img2Ascii {
             System.out.println("Failed to load image");
             return;
         }
-
+        StringBuilder line = new StringBuilder();
         for (int i = 0; i < img.getHeight(); i++) {
             for (int j = 0; j < img.getWidth(); j++) {
                 Color pixcol = new Color(img.getRGB(j, i));
                 pixval = (((pixcol.getRed() * 0.30) + (pixcol.getBlue() * 0.59) + (pixcol
                         .getGreen() * 0.11)));
-                System.out.print(strChar(pixval));
+                line.append(strChar(pixval));
             }
-            System.out.println("");
+            System.out.println(line.toString());
+            System.out.flush();
+            line.setLength(0);
         }
     }
 
