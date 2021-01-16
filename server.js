@@ -1,7 +1,16 @@
-const image_conversion = require('./image_conversion/launch_child_process');
 const fs = require('fs');
+const bodyParser = require("body-parser");
+const express = require('express')
+const app = express()
+const port = 3000
 
-fs.readFile('hcdev.png', (err, data) => {
-    if (err) throw err;
-    image_conversion.runImg2Ascii(data);
-});
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use('./api/')
+app.get('/', (req, res) => {
+  console.log(req.body);
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening at http://localhost:${port}`)
+})
