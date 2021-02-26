@@ -23,8 +23,7 @@ const runImg2Ascii = (img) => {
         img_to_ascii.on("close", code => {
             resolve(resultant_ascii);
         });
-
-        img_to_ascii.stdin.write(img);
+        img_to_ascii.stdin.write(img.buffer);
         img_to_ascii.stdin.end();    
     });
 }

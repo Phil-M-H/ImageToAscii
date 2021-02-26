@@ -1,0 +1,30 @@
+219c219
+<       _idleStart: 3702,
+---
+>       _idleStart: 2580,
+415c415
+<       _idleStart: 3702,
+---
+>       _idleStart: 2580,
+435c435
+<     'postman-token': 'baea57ec-f656-483c-8df2-b447b2ea1a69',
+---
+>     'postman-token': '2dc0bc42-fa04-4b8f-a1b9-810dd86178f7',
+449c449
+<     'baea57ec-f656-483c-8df2-b447b2ea1a69',
+---
+>     '2dc0bc42-fa04-4b8f-a1b9-810dd86178f7',
+651c651
+<       _idleStart: 3702,
+---
+>       _idleStart: 2580,
+737c737
+<         _idleStart: 3702,
+---
+>         _idleStart: 2580,
+781c781
+<         _idleStart: 3702,
+---
+>         _idleStart: 2580,
+801a802
+>   body: {},
